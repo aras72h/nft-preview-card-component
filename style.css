@@ -35,9 +35,9 @@ a:visited {
 }
 
 .card {
-  width: 80%;
+  width: 90%;
   max-width: 22.186rem;
-  padding: 1.728rem;
+  padding: 1.44rem;
   border-radius: 1rem;
 }
 
@@ -69,7 +69,7 @@ a:visited {
 
 .card h1 {
   align-self: flex-start;
-  margin: 1.44rem 0;
+  margin: 1.44rem 0 1rem 0;
 }
 
 .price-info {
@@ -100,7 +100,7 @@ a:visited {
 
 .avatar {
   width: 100%;
-  max-width: 2.986rem;
+  max-width: 2.074rem;
   outline: 1px solid var(--white);
   border-radius: 50%;
 }
