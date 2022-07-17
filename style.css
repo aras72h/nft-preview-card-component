@@ -1,0 +1,185 @@
+:root {
+  /* Type */
+  --typeface: 'Outfit', sans-serif;
+  --font-size: 18px;
+
+  /* Color */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: var(--typeface);
+  font-size: var(--font-size);
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  /* outline: 1px solid limegreen; */
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* Layout */
+.container {
+  min-height: 100vh;
+}
+
+.card {
+  width: 80%;
+  max-width: 22.186rem;
+  padding: 1.728rem;
+  border-radius: 1rem;
+}
+
+.image-container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.card-image {
+  max-width: 100%;
+  border-radius: .694rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: .8rem;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.card h1 {
+  align-self: flex-start;
+  margin: 1.44rem 0;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.44rem 0 .335rem 0;
+  width: 100%;
+}
+
+.price::before {
+  content: url(images/icon-ethereum.svg);
+  margin-inline-end: .233rem;
+  vertical-align: middle;
+}
+
+.timer::before {
+  content: url(images/icon-clock.svg);
+  margin-inline-end: .233rem;
+  vertical-align: middle;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 2.986rem;
+  outline: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.creator-info>p {
+  margin-inline-start: 1rem;
+}
+
+/* Type */
+.card h1 {
+  font-size: 1.44rem;
+  font-weight: 600;
+}
+
+.card>p {
+  font-weight: 300;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.creator-info>p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Color */
+.container {
+  background-color: var(--main-bg);
+  color: var(--white);
+}
+
+.card {
+  background-color: var(--card-bg);
+  filter: drop-shadow(0 2rem 2rem black);
+}
+
+.overlay {
+  background-color: hsla(178, 100%, 50%, 50%);
+}
+
+p {
+  color: var(--soft-blue);
+}
+
+.price {
+  color: var(--cyan);
+}
+
+.timer {
+  color: var(--soft-blue);
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--line-color);
+  border-bottom: none;
+  margin: 1.2rem 0;
+}
+
+a {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--cyan);
+  transition: .3s ease;
+}
+
+
+/* Utility */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
